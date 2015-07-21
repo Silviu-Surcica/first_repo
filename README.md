@@ -1,2 +1,2 @@
 # first_repo
-print 'Hello world'
+print 'Hello'
