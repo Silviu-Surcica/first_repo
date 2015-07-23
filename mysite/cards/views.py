@@ -1,9 +1,11 @@
 from django.shortcuts import render
-
+from .models import Card
+from django.views import generic
+from django.core.urlresolvers import reverse
 
 class IndexView(generic.ListView):
     template_name = 'cards/index.html'
-    context_object_name = 'latest_question_list'
+    context_object_name = 'latest_cards_list'
 
     def get_queryset(self):
         """Return the last 20 cards."""
