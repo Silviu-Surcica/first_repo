@@ -19,7 +19,7 @@ class Question(models.Model):
 	was_published_recently.short_description = 'Published recently?'
 
 class Choise(models.Model):
-	question= models.ForeignKey(Question)
+	question= models.ForeignKey(Question,related_name='choises')
 	choise_text = models.CharField(max_length=200)
 	votes = models.IntegerField(default=0)
 
