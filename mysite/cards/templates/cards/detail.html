@@ -1,6 +1,6 @@
-<h1>{{ card.name }}</h1>
-<h1>{{card.url}}</h1>
-<h1>{{card.image}}</h1>
-<h1>{{card.media_type}}</h1>
-<h1>{{card.created_at}}</h1>
+<h1>Name:{{ card.name }}</h1>
+<h1>URL:<a href="{{card.url}}">{{card.url}}</a></h1>
+<h1>Content:<a href="{{card.image.url}}">{{card.image}}</a></h1>
+<h1>Media Type:{{card.media_type}}</h1>
+<h1>Created at:{{card.created_at}}</h1>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
